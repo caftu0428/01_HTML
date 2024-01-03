@@ -11,53 +11,57 @@
 <body>
     <form action="10_연습문제3결과.html">
 
-        고객명 : <input type="text" name="clientName">
-        <br><br>
-        전화번호 : <input type="text" name="clientPhone">
-        <br><br>
-        Email : <input type="text" name="clientEmail">
-        <br><br>
-        </select>
+        <label>고객명 : </label>
+        <input type="text" name="clientName"><br><br>
 
-        피자선택 : <select name="pizza">
-            <option>치즈</option>
-            <option>페페로니</option>
-            <option>파인애플</option>
-            <option>로스크</option>
+        <label>전화번호 : </label> 
+        <input type="tel" name="clientPhone"><br><br>
+
+        <label>Email : </label> 
+        <input type="email" name="clientEmail"><br><br>
+
+        <label>피자선택 : </label>
+        <select name="pizza">
+            <option>피자를 선택하세요</option>
+            <option>치즈 피자</option>
+            <option>아보카도 피자</option>
+            <option>파인애플 피자</option>
+            <option selected>치킨야키 피자</option>
         </select>
+        <br>
             
         <fieldset>            
             <legend>피자 사이즈</legend>
-            <label>
-                <input type="radio" name="size" value="작은 거"> Small
-            </label>
-            <br><br>
-            <label>
-                <input type="radio" name="size" value="중 간"> Medium
-            </label>
-            <br><br>
-            <label>
-                <input type="radio" name="size" value="큰 거"> Large
-            <br><br>
-            </label>
+            <input id="Small" type="radio" name="size" value="작은 거">
+            <label for="Small">Small</label><br><br>
+    
+            <input id="Medium" type="radio" name="size" value="중 간">
+            <label for="Medium">Medium</label><br><br>
+    
+            <input id="Large" type="radio" name="size" value="큰 거">
+            <label for="Large">Large</label><br><br>
         </fieldset>
 
         <fieldset>
             <legend>토핑 선택</legend>
-            <label><input type="checkbox" name="topping" value="베이컨 선택">베이컨</label>
-            <br><br>
-            <label><input type="checkbox" name="topping" value="치즈 선택">치즈</label>
-            <br><br>
-            <label><input type="checkbox" name="topping" value="양파 선택">양파</label>
-            <br><br>
-            <label><input type="checkbox" name="topping" value="버섯 선택">버섯</label>
-            <br><br>
-        </fieldset>
-        희망배송시간 : <input type="time" name="wishTime">
-        <br><br>
+            <input id="66.1" type="checkbox" name="topping" value="베이컨 선택">
+            <label for="66.1">베이컨</label><br><br>
 
-        배송시 유의사항 : <textarea name="request" rows="3" cols="30"></textarea>
-        <br><br>
+            <input id="66.2" type="checkbox" name="topping" value="베이컨 선택">
+            <label for="66.2">치즈</label><br><br>
+
+            <input id="66.3" type="checkbox" name="topping" value="베이컨 선택">
+            <label for="66.3">양파</label><br><br>
+
+            <input id="66.4" type="checkbox" name="topping" value="베이컨 선택">
+            <label for="66.4">버섯</label><br><br>
+        </fieldset>
+
+        <br>
+        희망배송시간 :
+        <input type="time" name="wishTime"><br><br>
+
+        배송시 요청사항 : <textarea name="request" rows="3" cols="30"></textarea><br><br>
 
         <button>주문</button>
 
