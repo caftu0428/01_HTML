@@ -10,46 +10,98 @@
 
 <body>
     <form action="12_연습문제5결과.html">
+        <h1>회원 가입</h1>
 
         <fieldset>
             <legend>필수 입력 사항</legend>
-            <br>
-            <b>ID<input type="text" name="id"> <button>중복 확인</button></b>
-            <br><br>
-            <b>비밀번호<input type="password" name="pw1">
-            <br><br>
-            <b>비밀번호 재확인<input type="password" name="pw2">
-            <br><br>
-            <b>Email<input type="text" name="email1">
-            <select name="email2">
-                <option>직접입력</option>
-                <option>네이버dddddddd</option>
-                <option>구글ddddddd</option>
-                <option>폭스ddddddd</option>
-            </select>
-            <br><br>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <td>
+                        <input type="text" name="id" placeholder="아이디 10글자 이내">
+                    </td>
+                    <td>
+                        <button type="button">중복 확인</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>비밀번호</th>
+                    <td colspan="2">
+                        <input type="password" name="pw1" size="30" placeholder="영문,숫자,특수문자 포함 8자 이상">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td colspan="2">
+                        <input type="password" name="pw2" size="30">
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="text" name="emaill">
+                    </td>
+                    <td>
+                        <select name="email2">
+                            <option>직접입력</option>
+                            <option>naver.com</option>
+                            <option>폭스</option>
+                            <option>구글</option>
+                            <option>이이</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
         </fieldset>
 
         <fieldset>
             <legend>추가 정보</legend>
-            성별 : <input type="radio" name="gender" value="남자"> 남성
-            <input type="radio" name="gender" value="여성"> 여성
+
+            성별 :
+            <input type="radio" id="man" value="남성" name="gender">
+            <label for="man">남성</label>
+            <input type="radio" id="woman" value="여성" name="gender">
+            <label for="woman">여성</label>
             <br><br>
+
             생년월일 : <input type="date" name="birthday">
             <br><br>
+
             취미<br>
-            <input type="checkbox" name="hobby" value="야구"> 야구 
-            <input type="checkbox" name="hobby" value="농구"> 농구
-            <input type="checkbox" name="hobby" value="축구"> 축구
-            <br>
-            <input type="checkbox" name="hobby" value="공부"> 공부
-            <input type="checkbox" name="hobby" value="음악"> 음악감상
-            <br><br><br>
+            <input type="checkbox" value="야구" id="Aa" name="hobby">
+            <label for="Aa">야구</label>
+                        
+            <input type="checkbox" value="농구" id="Ab" name="hobby">
+            <label for="Ab">농구</label>
+                        
+            <input type="checkbox" value="축구" id="Ac" name="hobby">
+            <label for="Ac">축구</label> <br>
+                        
+            <input type="checkbox" value="공부" id="Ad" name="hobby" checked>
+            <label for="Ad">공부</label>
+
+            <input type="checkbox" value="음악감상" id="Ae" name="hobby">
+            <label for="Ae">음악감상</label> <br>
+                        
+            <br><br>
+
             자기소개<br>
             <textarea name="intro" cols="80" rows="10"></textarea>
-        </fieldset>
-        <button>회원가입</button>
-        <button>다시입력</button>
+
+            <br>
+
+        </fieldset><br>
+
+        <button type="submit">회원가입</button>
+        <button type="reset">다시입력</button>
+
+        <br><br>
     </form>
 </body>
 
