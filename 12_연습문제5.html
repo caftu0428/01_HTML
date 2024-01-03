@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_연습문제5</title>
+</head>
+
+<body>
+    <form action="12_연습문제5결과.html">
+
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <br>
+            <b>ID<input type="text" name="id"> <button>중복 확인</button></b>
+            <br><br>
+            <b>비밀번호<input type="password" name="pw1">
+            <br><br>
+            <b>비밀번호 재확인<input type="password" name="pw2">
+            <br><br>
+            <b>Email<input type="text" name="email1">
+            <select name="email2">
+                <option>직접입력</option>
+                <option>네이버dddddddd</option>
+                <option>구글ddddddd</option>
+                <option>폭스ddddddd</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>추가 정보</legend>
+            성별 : <input type="radio" name="gender" value="남자"> 남성
+            <input type="radio" name="gender" value="여성"> 여성
+            <br><br>
+            생년월일 : <input type="date" name="birthday">
+            <br><br>
+            취미<br>
+            <input type="checkbox" name="hobby" value="야구"> 야구 
+            <input type="checkbox" name="hobby" value="농구"> 농구
+            <input type="checkbox" name="hobby" value="축구"> 축구
+            <br>
+            <input type="checkbox" name="hobby" value="공부"> 공부
+            <input type="checkbox" name="hobby" value="음악"> 음악감상
+            <br><br><br>
+            자기소개<br>
+            <textarea name="intro" cols="80" rows="10"></textarea>
+        </fieldset>
+        <button>회원가입</button>
+        <button>다시입력</button>
+    </form>
+</body>
+
+</html>
